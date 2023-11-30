@@ -1,20 +1,12 @@
-let a = prompt ('input');
-a = +a;
-alert(typeof a);
+let inputValue = prompt("Input");
+console.log(inputValue);
 
-if (a% 2 ===0) {
-  alert("четное")
-  } else if (a%1 ===0) {
-    alert("нечетное");
-  } else {
-    alert("Упс, кажется ошибка")
-  }
-
-if (a > 0)
-  alert(true)
-  
-else if (a < 0)
-  alert(false)
-
-else
-  alert(false)
+if ((typeof(+inputValue) == 'number') && (!isNaN(+inputValue))){
+    if (inputValue % 2 === 0) {
+        console.log("Число чётное");
+    } else {
+        console.log("Число нечётное");
+    }
+} else {
+    console.log("Упс, кажется, вы ошиблись");
+}
