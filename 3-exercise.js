@@ -1,5 +1,6 @@
-s = prompt("Введите слово или число");
-function reverse(s) {
-    return s.split("").reverse().join("")
+s = "Hello";
+let res = "";
+for (let i = s.length-1; i >= 0 ; i--){
+    res += s[i];
 }
-console.log(reverse(s));
+console.log(res);
