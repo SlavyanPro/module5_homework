@@ -1,18 +1,11 @@
-let x =  prompt  ("input");
+let num = 1;
 
-x = +x; 
-alert(typeof x);
-
-x = "123";
-alert (typeof x);
-
-if (x > 0) {
- alert(true);
+if ((typeof(num) == 'number')&&(!isNaN(num))) {
+    console.log("Числовое значение");
+} else if (typeof(num) == 'string') {
+    console.log("Строка");
+} else if (typeof(num) == 'boolean') {
+    console.log("Логическое значение");
+} else {
+    console.log("Тип x не определён");
 }
-else if (x < 0) {
-  alert(false);
-}
-
-else {
-   alert("Тип Х не определен");
-   }
